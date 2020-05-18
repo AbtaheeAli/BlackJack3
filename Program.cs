@@ -109,6 +109,7 @@ namespace BlackJack3
         static void Main(string[] args)
         {
             var deck = new Deck();
+
         }
     }
 }
