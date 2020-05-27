@@ -22,16 +22,12 @@ namespace BlackJack3
             var total = 0;
 
             foreach (var card in CardsHeld)
-
             {
                 var cardValue = card.Value();
-
                 total += cardValue;
-
             }
 
             return total;
-
         }
     }
 }

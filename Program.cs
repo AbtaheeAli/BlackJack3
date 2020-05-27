@@ -44,7 +44,6 @@ namespace BlackJack3
 
             while (playerOneHand.TotalValue() <= 21)
             {
-
                 Console.WriteLine();
                 playerOneHand.ShowTheCards();
                 Console.WriteLine($"The total value of your hand is {playerOneHand.TotalValue()}");
@@ -54,8 +53,8 @@ namespace BlackJack3
                 Console.WriteLine("\th - Hit");
                 Console.WriteLine("\ts - Stand");
                 Console.WriteLine("What is your decision?");
-
                 var input = Console.ReadLine();
+
                 if (input == "h")
                 {
                     var anotherCard = deck.Deal();
@@ -70,6 +69,7 @@ namespace BlackJack3
 
             Console.WriteLine();
             playerOneHand.ShowTheCards();
+
             Console.WriteLine($"Your value of your cards is {playerOneHand.TotalValue()}");
             Console.WriteLine();
 
@@ -78,15 +78,19 @@ namespace BlackJack3
                 var anotherCard = deck.Deal();
                 dealerHand.Accept(anotherCard);
             }
+
             displayDealer();
             Console.WriteLine("It's the Dealers turn! Press any button to display the Dealers hand.");
             Console.ReadKey();
             Console.WriteLine();
+
             Console.WriteLine("The Dealer has... ");
             Console.WriteLine();
+
             dealerHand.ShowTheCards();
             var totalOfDealerHands = dealerHand.TotalValue();
             Console.WriteLine();
+
             Console.WriteLine($"A total of {totalOfDealerHands}");
             Console.WriteLine();
 
@@ -99,10 +103,12 @@ namespace BlackJack3
             {
                 Console.WriteLine("You WIN!!");
             }
+
             else if (dealerHand.TotalValue() >= playerOneHand.TotalValue())
             {
                 Console.WriteLine("You Busted!");
             }
+
             else
             {
                 Console.WriteLine("You WIN!!");

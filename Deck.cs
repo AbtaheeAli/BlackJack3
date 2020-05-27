@@ -12,6 +12,7 @@ namespace BlackJack3
         {
             var ranks = new List<string>() { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
             var suits = new List<string>() { "Clubs", "Spades", "Diamonds", "Hearts" };
+
             for (var rankIndex = 0; rankIndex < ranks.Count(); rankIndex++)
             {
                 for (var suitIndex = 0; suitIndex < suits.Count(); suitIndex++)
@@ -21,13 +22,12 @@ namespace BlackJack3
                     newCard.Suit = suits[suitIndex];
                     Cards.Add(newCard);
                 }
-
             }
+
             var n = 52;
-            // for firstIndex from n - 1 down to 1 do:
+
             for (var firstIndex = n - 1; firstIndex >= 1; firstIndex--)
             {
-
                 Random rnd = new Random();
 
                 var secondIndex = rnd.Next(firstIndex);
@@ -47,7 +47,6 @@ namespace BlackJack3
             Cards.Remove(card);
 
             return card;
-
         }
     }
 }
