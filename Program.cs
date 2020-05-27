@@ -59,7 +59,6 @@ namespace BlackJack3
                     var anotherCard = deck.Deal();
                     playerOneHand.Accept(anotherCard);
                 }
-
                 else
                 {
                     break;
@@ -97,17 +96,14 @@ namespace BlackJack3
             {
                 Console.WriteLine("You Busted!");
             }
-
             else if (dealerHand.TotalValue() > 21)
             {
                 Console.WriteLine("You WIN!!");
             }
-
             else if (dealerHand.TotalValue() >= playerOneHand.TotalValue())
             {
                 Console.WriteLine("You Busted!");
             }
-
             else
             {
                 Console.WriteLine("You WIN!!");
