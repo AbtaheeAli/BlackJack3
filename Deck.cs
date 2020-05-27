@@ -7,7 +7,6 @@ namespace BlackJack3
     class Deck
     {
         private List<Card> Cards = new List<Card>();
-
         public void MakeCards()
         {
             var ranks = new List<string>() { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
@@ -40,6 +39,7 @@ namespace BlackJack3
                 Cards[secondIndex] = firstValue;
             }
         }
+
         public Card Deal()
         {
             var card = Cards[0];

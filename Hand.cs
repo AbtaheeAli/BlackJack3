@@ -6,7 +6,6 @@ namespace BlackJack3
     class Hand
     {
         public List<Card> CardsHeld = new List<Card>();
-
         public void Accept(Card cardWeAreHolding)
         {
             CardsHeld.Add(cardWeAreHolding);

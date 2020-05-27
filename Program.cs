@@ -2,7 +2,6 @@
 
 namespace BlackJack3
 {
-
     class Program
     {
         static void displayGreeting()
@@ -119,8 +118,5 @@ namespace BlackJack3
 
             Main(null);
         }
-
-
     }
-
 }
