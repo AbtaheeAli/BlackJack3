@@ -7,7 +7,7 @@ namespace BlackJack3
         static void displayGreeting()
         {
             Console.WriteLine("------------------------------------------------");
-            Console.WriteLine("<><><><><> Lets play some Blackjack!<><><><><>   ");
+            Console.WriteLine("<><><><><>Lets play some Blackjack!<><><><><>   ");
             Console.WriteLine("------------------------------------------------");
             Console.WriteLine();
         }
