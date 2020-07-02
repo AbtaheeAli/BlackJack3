@@ -2,6 +2,7 @@
 
 ![Kapture 2020-07-02 at 16 15 51](https://user-images.githubusercontent.com/62678918/86405433-59b31b00-bc7f-11ea-93ac-4f7f0cf34b79.gif)
 
+Languages Used: C#
 
 The back-end Blackjack application consisted of three classes:
 
